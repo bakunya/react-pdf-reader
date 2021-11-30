@@ -1,0 +1,16 @@
+.container-num {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #ffffffd6;
+    flex-wrap: wrap;
+}
+
+.container-num a {
+    margin: 5px 10px;
+    text-decoration: none;
+}

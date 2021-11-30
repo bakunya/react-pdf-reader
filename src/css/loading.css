@@ -1,0 +1,38 @@
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    z-index: 9999;
+}
+
+.loading-circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(224, 224, 224);
+    animation: loading;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes loading {
+    0% {
+        transform: scale(0.8);
+        background-color: rgb(224, 224, 224);
+    }
+    50% {
+        transform: scale(1.2);
+        background-color: rgb(204, 204, 204);
+    }
+    100% {
+        transform: scale(0.8);
+        background-color: rgb(224, 224, 224);
+    }
+}
