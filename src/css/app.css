@@ -2,15 +2,22 @@
     width: 100%;
     display: flex;
     padding: 10px;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     position: fixed;
     top: 0;
     background-color: #ffffffd6;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .container-num a {
     margin: 5px 10px;
     text-decoration: none;
+}
+
+@media screen and (min-width: 500px) {
+    .container-num {
+        justify-content: center;
+    }
 }
